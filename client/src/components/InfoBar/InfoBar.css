@@ -1,0 +1,45 @@
+.infoBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #bb0761;
+    border-radius: 4px 4px 0 0;
+    height: 60px;
+    width: 100%;
+  }
+  
+  .leftInnerContainer {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    color: white;
+  }
+  
+  .rightInnerContainer {
+    display: flex;
+    flex: 0.5;
+    justify-content: flex-end;
+    margin-right: 5%;
+  }
+  
+  .onlineIcon {
+    margin-right: 5%;
+  }
+
+  .rightInnerContainer .leaveButton {
+    background-color: #c035d6; /* Button color */
+    color: white;             /* Text color */
+    border: none;             /* Remove border */
+    padding: 10px 20px;       /* Add some padding */
+    border-radius: 5px;       /* Rounded corners */
+    cursor: pointer;          /* Pointer cursor on hover */
+    font-size: 16px;          /* Adjust font size */
+    font-weight: bold;        /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+  }
+  
+  .rightInnerContainer .leaveButton:hover {
+    background-color: #db9dd5; /* Darker shade on hover */
+  }
+  

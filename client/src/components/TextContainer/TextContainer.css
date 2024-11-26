@@ -1,0 +1,53 @@
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    color: rgb(3, 3, 3);
+    height: 60%;
+    justify-content: space-between;
+  }
+
+  .textContainer .pinkLine1 {
+    color: #bb0761;
+    font-weight: 800; /* Maximum boldness */
+}
+
+.textContainer .pinkLine2 {
+  color: #710ba3;
+  font-weight: 700; /* Maximum boldness */
+}
+
+
+  
+  .activeContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50%;
+  }
+  
+  .activeItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .activeContainer img {
+    padding-left: 10px;
+  }
+  
+  .textContainer h1 {
+    margin-bottom: 0px;
+  }
+
+  .typingIndicator {
+    margin-left: 10px;
+    font-style: italic;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  
+  @media (min-width: 320px) and (max-width: 900px) {
+    .textContainer {
+      display: none;
+    }
+  }

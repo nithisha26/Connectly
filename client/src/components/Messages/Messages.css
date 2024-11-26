@@ -1,0 +1,8 @@
+.messages {
+  height: 100%; /* Full height of the parent container */
+  overflow-y: auto; /* Enable scrolling */
+  display: flex;
+  flex-direction: column; /* Stack messages vertically */
+  padding: 10px; /* Add padding around messages */
+  box-sizing: border-box; /* Include padding in dimensions */
+}

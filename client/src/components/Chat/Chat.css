@@ -1,0 +1,83 @@
+/* Outer Container */
+.outerContainer {
+  display: flex;
+  justify-content: flex-start; /* Align children horizontally with no extra space */
+  align-items: flex-start; /* Align items to the top */
+  height: 100vh;
+  background-color: #cab8ce;
+  padding: 70px; /* Add padding */
+  box-sizing: border-box; /* Include padding in width/height calculations */
+  gap: 20px; /* Space between child elements */
+}
+
+/* Chat Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 8px;
+  height: 100%; /* Full height of the outerContainer */
+  width: 50%; /* 50% width for the chat section */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  padding: 20px;
+  box-sizing: border-box;
+  max-height: 100%; /* Prevent the height from increasing */
+  overflow-y: auto; /* Add scrolling when content overflows */
+}
+
+/* Drawing Board Wrapper */
+.drawing-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 40%; /* 40% width for the drawing board */
+  height: 100%; /* Full height of the outerContainer */
+  box-sizing: border-box;
+}
+
+/* Side Container (TextContainer) */
+.sideContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: #FFFFFF; */
+  border-radius: 8px;
+  padding: 0px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  width: 30%; /* 30% width for TextContainer */
+  height: 100%; /* Full height of the outerContainer */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .outerContainer {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+    height: auto; /* Adjust height dynamically */
+    gap: 15px; /* Reduce spacing */
+  }
+
+  .container,
+  .drawing-container-wrapper,
+  .sideContainer {
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Adjust height dynamically */
+  }
+
+  .container {
+    min-height: 400px;
+    max-height: 550px; /* Add max height for the chat box */
+    overflow-y: auto; /* Enable scroll when content exceeds */
+  }
+
+  .container,
+  .drawing-container-wrapper {
+    margin-bottom: 15px; /* Space between sections */
+  }
+}
