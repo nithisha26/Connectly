@@ -14,13 +14,14 @@ const DrawingBoard = ({ socket, room }) => {
     const canvas = canvasRef.current;
     canvas.width = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
-
+  
     const ctx = canvas.getContext("2d");
     ctx.lineCap = "round";
     ctx.strokeStyle = color;
     ctx.lineWidth = brushWidth;
     ctxRef.current = ctx;
-  }, []);
+  }, [color, brushWidth]);
+  
 
   // Listen for drawing events from the server
   useEffect(() => {
